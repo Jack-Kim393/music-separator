@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual Environment
+.venv/
+
+# Uploads and Separated Music
+# These are generated or user-provided content, not part of the source code.
+uploads/
+separated_music/
+pretrained_models/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store

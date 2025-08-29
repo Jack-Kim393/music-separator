@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Separator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎵 Music Separator</h1>
+            <p>음악 파일에서 보컬과 반주를 손쉽게 분리하세요.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <h2>1. 음원 파일 업로드</h2>
+                <div id="drop-area">
+                    <form class="upload-form">
+                        <input type="file" id="file-input" accept="audio/*" hidden>
+                        <label for="file-input" class="file-label">파일 선택</label>
+                        <p>또는 파일을 이곳에 드래그 앤 드롭하세요.</p>
+                    </form>
+                </div>
+                <div id="upload-status"></div>
+            </div>
+
+            <div class="tracklist-section">
+                <h2>2. 분리된 트랙 목록</h2>
+                <div id="track-list">
+                    <p class="loading-message">페이지 로딩 시 기존에 분리된 곡들을 불러옵니다...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by Spleeter</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
