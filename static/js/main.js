@@ -80,15 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(response => response.json())
                 .then(data => {
                     switch (data.status) {
-                        case 'processing':
+                        case 'PROCESSING':
                             updateStatus('음원 분리 중... 잠시만 기다려주세요.');
                             break;
-                        case 'complete':
+                        case 'SUCCESS':
                             clearInterval(interval);
                             updateStatus('🎉 음원 분리 완료!', false, 5000);
                             loadTracks();
                             break;
-                        case 'error':
+                        case 'FAILURE':
                             clearInterval(interval);
                             updateStatus(`오류 발생: ${data.message}`, true);
                             break;
